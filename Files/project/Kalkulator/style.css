@@ -1,0 +1,54 @@
+.gridContainer
+{
+    display: grid;
+    grid-template-columns: repeat(4,25%);
+    grid-template-rows: 40px auto;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 459px;
+    gap: 3px;
+}
+.marginZ
+{
+    margin:0px;
+}
+.display
+{
+    grid-column: 1 / span 4;
+    text-align: right;
+    font-size: 30px;
+    padding-right: 10px;
+}
+.button
+{
+    width: 110px;
+    height: 110px;
+    font-size: 16px;
+}
+
+.darker
+{
+    background-color: rgb(235, 235, 235);
+}
+
+.other
+{
+    background-color: aliceblue;
+}
+
+@media (max-width:600px)
+{
+    .gridContainer
+    {
+        max-width: 250px;
+    }
+    .button
+    {
+        font-size: 9px;
+    }
+}
+
+.lowerDisplay
+{
+    margin-top: 50px;
+}

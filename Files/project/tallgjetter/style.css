@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+main{
+    width: 30%;
+    margin: auto;
+    font-family: "Roboto", sans-serif;
+    min-width: 300px;
+}
+
+.gridcontainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    justify-items: center;
+    align-items: center;
+}
+
+.wide{
+    grid-column: 1 / -1;
+}
+
+#numberBox{
+    background-color: rgb(234, 234, 234);
+    border: 1px solid lightgray;
+    border-radius: 15px;
+    min-width: 120px;
+    min-height: 50px;
+    max-width: 120px;
+
+    max-height: 50px;
+    font-size: xx-large;
+    text-align: center;
+    vertical-align: middle;
+    font-weight: 900;
+    line-height: 50px;
+
+}
+
+#enterAnsBox{
+    font-size: larger;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    
+    max-height: 50px;
+    width: 100px;
+    text-align: center;
+    background-color: lime;
+    border-radius: 50px;
+    font-weight: 900;
+    justify-self: left;
+}
+
+#wrongGuesses{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 10px;
+    row-gap: 10px;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.wrongGuess{
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: larger;
+    text-align: center;
+    vertical-align: middle;
+    font-weight: 900;
+    line-height: 5px;
+
+    width: 10%;
+
+    border-radius: 20px;
+    border: 2px dotted grey;
+}
+
+.toHigh{
+    background-color: red;
+    border: 2px solid red;
+}
+
+.toLow{
+    background-color: aliceblue;
+}
+
+.correct{
+    background-color: limegreen;
+    border: 2px solid black;
+}
+
+#resetButton, #skiftfargegreier{
+    justify-self: left;
+    margin-right: 50px;
+    background-color: rgb(227, 227, 227);
+    padding: 5px;
+    padding-left: 40px;
+    padding-right: 40px;
+    border-radius: 20px;
+    font-weight: bolder;
+
+    background-color: greenyellow;
+}
+
